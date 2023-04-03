@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
 /* 
@@ -9,6 +8,7 @@
 // font-family: 'Roboto', sans-serif; */
 body {
   background-color: #0b1315;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -17,6 +17,7 @@ nav {
   height: 120px;
   width: 100vw;
   background-color: #0b1315;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
 .logo-container {
   display: flex;
@@ -76,4 +77,312 @@ nav {
   width: inherit;
   height: inherit;
   filter: drop-shadow(7px 10px 4px rgba(0, 0, 0, 0.3));
+}
+.hero-extended {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-logo {
+  text-align: center;
+}
+.hero-logo .part-one {
+  color: #eae0cc;
+  font-size: 128px;
+}
+.btn {
+  width: 316px;
+  height: 73px;
+  left: 562px;
+  top: 641px;
+  background: #fb8b24;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+}
+.order-now-btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.find-us-btn {
+  position: absolute;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  top: 93%;
+  left: 21.5%;
+}
+.our-menu-btn {
+  position: absolute;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  top: 93%;
+  left: 50%;
+}
+.gallery-btn {
+  position: absolute;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  top: 93%;
+  left: 79%;
+}
+#partners {
+  background-color: #ff7f11;
+  height: 220px;
+  width: 100vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 50px;
+  line-height: 75px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.partner-ico {
+  background-color: black;
+  width: 200px;
+  height: 30px;
+}
+.partner-list {
+  font-size: 40px;
+  margin-left: 100px;
+  color: #ffffff;
+}
+.partner-list li {
+  display: inline-block;
+  padding-right: 150px;
+  height: 100px;
+  width: auto;
+}
+.partner-list li img {
+  width: 200px;
+  height: auto;
+}
+#swiggy {
+  width: 250px;
+  margin-bottom: 40px;
+}
+#deliveryHero {
+  width: 300px;
+}
+#doorDash {
+  margin-bottom: 25px;
+}
+#thuisbezorgd {
+  margin-bottom: 25px;
+}
+#menu {
+  height: auto;
+  width: 100vw;
+}
+.menu-heading,
+.gallery-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "cookie", cursive;
+  font-weight: 400;
+  font-size: 100px;
+  color: #eae0cc;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+.reserve-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "cookie", cursive;
+  font-weight: 400;
+  font-size: 100px;
+  color: #eae0cc;
+}
+.menu-container {
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  gap: 50px;
+  height: auto;
+  width: auto;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  border: solid #eae0cc 1px;
+}
+.menu-item {
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  width: 500px;
+}
+.menu-item h2 {
+  font-family: "cookie", cursive;
+  font-weight: 400;
+}
+.menu-item-desc {
+  color: white;
+  font-size: 25px;
+}
+.add-to-cart-btn {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+}
+#gallery {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100vw;
+  height: auto;
+  background-color: #0d1618;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+.gallery-slideshow {
+  position: relative;
+  display: inline-block;
+  margin-top: 9px;
+  width: 100vw;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.triangle-left {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  border-top: 100px solid transparent;
+  border-right: 100px solid rgba(137, 135, 135, 0.5);
+  border-bottom: 100px solid transparent;
+}
+.triangle-right {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translate(-50%, -50%);
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid rgba(137, 135, 135, 0.5);
+}
+#reserve {
+  width: 100vw;
+  height: 80vh;
+  background-color: #0d1618;
+  box-shadow: 15px 12px 4px rgba(0, 0, 0, 0.25);
+}
+.reservation-container {
+  display: flex;
+  margin-top: 50px;
+  width: auto;
+  height: 50%;
+}
+.reservation-container label {
+  font-family: "Cookie", cursive;
+  color: #eae0cc;
+  font-size: 60px;
+  font-weight: 400;
+}
+.reservation-form {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+}
+.reservation-form-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservation-form input {
+  width: 300px;
+  height: 50px;
+  background: #d9d9d9;
+  border-radius: 34px;
+}
+.reservation-form-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.reservation-form-middle input {
+  width: 250px;
+}
+
+.map-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+.reservation-form-btn {
+  background: #19272b;
+  box-shadow: 75px 21px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  font-family: "Cookie", cursive;
+  color: #eae0cc;
+  font-size: 70px;
+  font-weight: 400;
+}
+.reservation-form-end {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.reservation-form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.map {
+  border: 1px solid #193137;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 150px;
+}
+.footer-line {
+  margin-top: 3px;
+  width: 300px;
+  height: 3px;
+  background-color: white;
+}
+.footer-link a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.footer-link {
+  text-align: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form-container {
+  margin-top: 5%;
+  width: 700px;
+  height: 600px;
+  background-color: red;
+  background: #121f22;
+  box-shadow: 15px 12px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
 }
