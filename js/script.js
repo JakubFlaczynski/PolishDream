@@ -1,11 +1,11 @@
 var counter = 0;
 const images = [];
 images.push(
-  "../img/slide1.jpeg",
-  "../img/slide2.jpg",
-  "../img/slide3.jpg",
-  "../img/slide4.jpg",
-  "../img/slide5.jpg"
+  "./img/slide4.jpg",
+  "./img/slide2.jpg",
+  "./img/slide3.jpg",
+  "./img/slide1.jpeg",
+  "./img/slide5.jpg"
 );
 const slideshow = document.getElementById("gallery-slideshow");
 slideshow.style.backgroundImage = "url('" + images[0] + "')";

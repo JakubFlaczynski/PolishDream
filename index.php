@@ -1,3 +1,4 @@
+<?php include_once('./includes/connection.php');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -102,36 +103,18 @@
         <h1 class="menu-heading">What we have to offer</h1>
       </div>
       <div class="menu-container">
-        <div class="menu-item">
-          <h2>Pierogi ruskie</h2>
-          <p class="menu-item-desc">Cottage cheese | dough | potato mash</p>
-          <button class="add-to-cart-btn btn">Add to cart</button>
-        </div>
-        <div class="menu-item">
-          <h2>Pierogi ruskie</h2>
-          <p class="menu-item-desc">Cottage cheese | dough | potato mash</p>
-          <button class="add-to-cart-btn btn">Add to cart</button>
-        </div>
-        <div class="menu-item">
-          <h2>Pierogi ruskie</h2>
-          <p class="menu-item-desc">Cottage cheese | dough | potato mash</p>
-          <button class="add-to-cart-btn btn">Add to cart</button>
-        </div>
-        <div class="menu-item">
-          <h2>Pierogi ruskie</h2>
-          <p class="menu-item-desc">Cottage cheese | dough | potato mash</p>
-          <button class="add-to-cart-btn btn">Add to cart</button>
-        </div>
-        <div class="menu-item">
-          <h2>Pierogi ruskie</h2>
-          <p class="menu-item-desc">Cottage cheese | dough | potato mash</p>
-          <button class="add-to-cart-btn btn">Add to cart</button>
-        </div>
-        <div class="menu-item">
-          <h2>Pierogi ruskie</h2>
-          <p class="menu-item-desc">Cottage cheese | dough | potato mash</p>
-          <button class="add-to-cart-btn btn">Add to cart</button>
-        </div>
+      <?php
+$sql = 'SELECT * FROM menu';
+
+foreach ($conn->query($sql) as $row) {
+  echo('<div class="menu-item">');
+  echo("<h2>" . $row['Name']. "&nbsp;&nbsp;&nbsp;" .$row['Price']. "$". "</h2>");
+  echo('<p class="menu-item-desc">' . $row['Description']. "</p>");
+  echo('<button class="add-to-cart-btn btn">Add to cart</button>');
+  echo("</div>");
+}
+
+    ?>
       </div>
     </section>
     <section id="gallery">

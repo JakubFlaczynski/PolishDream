@@ -46,6 +46,16 @@ nav {
   gap: 40px;
   color: #ffffff;
 }
+.mng-nav-links ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 30px;
+  font-size: 28px;
+  gap: 40px;
+  color: #ffffff;
+}
 .nav-links img {
   display: flex;
   align-self: center;
@@ -116,22 +126,29 @@ nav {
   position: absolute;
   width: 250px;
   transform: translate(-50%, -50%);
-  top: 93%;
+  top: 94%;
   left: 21.5%;
 }
 .our-menu-btn {
   position: absolute;
   width: 250px;
   transform: translate(-50%, -50%);
-  top: 93%;
+  top: 94%;
   left: 50%;
 }
 .gallery-btn {
   position: absolute;
   width: 250px;
   transform: translate(-50%, -50%);
-  top: 93%;
+  top: 94%;
   left: 79%;
+}
+.mng-welcome-btn {
+  position: absolute;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 50%;
 }
 #partners {
   background-color: #ff7f11;
@@ -368,7 +385,8 @@ footer {
 .footer-link {
   text-align: center;
 }
-.nav-links a {
+.nav-links a,
+.mng-nav-links a {
   text-decoration: none;
   color: white;
 }
@@ -422,4 +440,74 @@ footer {
 }
 a {
   text-decoration: none;
+}
+.mng-welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.mng-welcome-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 75px;
+  width: 1000px;
+  height: 700px;
+  background: #0d1618;
+  box-shadow: 15px 12px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  gap: 20px;
+}
+.mng-welcome-content-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 28px;
+}
+.mng-welcome-content-middle {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 28px;
+}
+.mng-welcome-content-bottom {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 28px;
+}
+.mng-option {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  background-position: center;
+  filter: drop-shadow(7px 10px 4px rgba(0, 0, 0, 0.3));
+}
+#mgn-menu {
+  background-image: url(../img/menu.PNG);
+}
+#mgn-employees {
+  background-image: url(../img/employees.jpg);
+}
+#mgn-reservations {
+  background-image: url(../img/reservations.jpg);
+}
+#mgn-orders {
+  background-image: url(../img/orders.png);
 }
