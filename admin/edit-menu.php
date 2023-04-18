@@ -30,25 +30,58 @@
         </div>
       </nav>
     </header>
-    <!-- <table>
+    <div class="mng-menu-container">
+      <div class="mng-menu-half">
+      <table>
         <tr>
           <th>Dish</th>
           <th>About the dish</th>
           <th>Price</th>
           </tr>
-    <?php
+    <?php include_once('includes/connectionmenu.php'); 
     $sql = 'SELECT * FROM menu';
     
     foreach ($conn->query($sql) as $row) {
       echo("<tr>");
-      echo("<td>" . $row['Name']. "</td>");
+      echo("<td>" . $row['Food']. "</td>");
       echo("<td>" . $row['Description']. "</td>");
       echo("<td>" . $row['Price']. "</td>");
       echo("</tr>");
       
     }
     ?>
-      </table> -->
-    <div class="mng-menu-remove"></div>
+      </table>
+      </div>
+      <div class="mng-menu-half" id="mng-right-half">
+        <div class="edit-form-container">
+        <div class="reservation-container">
+          <div class="reservation-form">
+            <form class="reservation" action="../php//editItem.php" method="post">
+              <div class="reservation-form-top">
+                <label>Name</label><br />
+                <input type="text" />
+              </div>
+              <div class="reservation-form-middle">
+                <div class="reservation-form-middle-fname">
+                  <label>Dscription</label><br />
+                  <input type="text" />
+                </div>
+                <div class="reservation-form-middle-lname">
+                  <label>Price</label><br />
+                  <input type="number" />
+                </div>
+              </div>
+              <div class="reservation-form-bottom">
+                <label>ID</label><br />
+                <input type="number" />
+              </div>
+              <div class="reservation-form-end">
+                <button type="submit" class="reservation-form-btn btn">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+    </div>
   </body>
 </html>

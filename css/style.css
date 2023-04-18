@@ -508,6 +508,48 @@ a {
 #mgn-reservations {
   background-image: url(../img/reservations.jpg);
 }
-#mgn-orders {
-  background-image: url(../img/orders.png);
+.mng-menu-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mng-menu-half {
+  width: 50%;
+  height: 85vh;
+  background-color: rebeccapurple;
+}
+#mng-right-half {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+.edit-form-container {
+  margin-left: 25%;
+  margin-bottom: 10%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid rgb(36, 35, 35);
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
