@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="logo-container">
-        <a href="index.html">
+        <a href="index.php">
         <p class="part-one logo">The Polish Dream</p>
         <p class="part-two logo">Management login</p>
         </a>
@@ -28,9 +28,9 @@
               <h1>Login</h1>
             </div>
             <div class="login-form-body">
-              <form>
-                <input type="text" placeholder="Username" class="login-form-input"/><br><br>
-                <input type="password" placeholder="Password" class="login-form-input"/><br><br>
+              <form action="./php/validate.php" name="Form" method="post" onsubmit="return validateForm()">
+                <input type="text" placeholder="Username" name="Username" class="login-form-input"/><br><br>
+                <input type="password" placeholder="Password" name="Password" class="login-form-input"/><br><br>
                 <div class="login-form-bottom">
                 <input type="submit" class="login-form-btn btn"  value="login">
               </div>
@@ -38,5 +38,6 @@
             </div>
         </div>
     <main>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,6 @@
+<?php 
+include_once('../includes/session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,9 +25,10 @@
         </div>
         <div class="mng-nav-links">
           <ul>
-            <a href="#menu"><li>Add to menu</li></a>
-            <a href="#gallery"><li>Remove from menu</li></a>
-            <a href="#reserve"><li>Sign out</li></a>
+          <a href="./add-menu.php"><li>Add to menu</li></a>
+            <a href="./delete-menu.php"><li>Remove from menu</li></a>
+            <a href="./edit-menu.php"><li>Edit the menu</li></a>
+            <a href="../php/logout.php"><li>Sign out</li></a>
           </ul>
         </div>
       </nav>
@@ -32,17 +36,17 @@
     <section class="mng-welcome-container">
       <div class="mng-welcome-content">
         <div class="mng-welcome-content-top">
-          <h1>Welcome >User></h1>
+          <h1>Welcome, what would you like to do?</h1>
         </div>
         <div class="mng-welcome-content-middle">
           <div class="mng-option" id="mgn-menu">
-            <a href="menu.php">
+            <a href="edit-menu.php">
                 <button class="mng-welcome-btn btn">Edit item</button></a
                 >
             </a>
           </div>
           <div class="mng-option" id="mgn-employees">
-            <a href="menu.php">
+            <a href="delete-menu.php">
                 <button class="mng-welcome-btn btn">Delete item</button></a
                 >
             </a>
@@ -50,7 +54,7 @@
         </div>
         <div class="mng-welcome-content-bottom">
           <div class="mng-option" id="mgn-reservations">
-            <a href="menu.php">
+            <a href="add-menu.php">
                 <button class="mng-welcome-btn btn">Add item</button></a
                 >
             </a>

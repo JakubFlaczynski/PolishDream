@@ -518,13 +518,11 @@ a {
 .mng-menu-half {
   width: 50%;
   height: 85vh;
-  background-color: rebeccapurple;
 }
 #mng-right-half {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
 }
 .edit-form-container {
   margin-left: 25%;
@@ -544,6 +542,7 @@ td {
 }
 
 th {
+  color: white;
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -552,4 +551,7 @@ th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+tr {
+  background-color: #473a53;
 }

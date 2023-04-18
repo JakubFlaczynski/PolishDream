@@ -21,11 +21,11 @@ include_once('../includes/session.php');
       <nav>
         <div class="logo-container">
           <p class="part-one logo">The Polish Dream</p>
-          <p class="part-two logo">Update the menu</p>
+          <p class="part-two logo">Add to the menu</p>
         </div>
         <div class="mng-nav-links">
           <ul>
-            <a href="./add-menu.php"><li>Add to menu</li></a>
+           <a href="./add-menu.php"><li>Add to menu</li></a>
             <a href="./delete-menu.php"><li>Remove from menu</li></a>
             <a href="./edit-menu.php"><li>Edit the menu</li></a>
             <a href="../php/logout.php"><li>Sign out</li></a>
@@ -61,9 +61,9 @@ include_once('../includes/session.php');
         <div class="edit-form-container">
         <div class="reservation-container">
           <div class="reservation-form">
-            <form class="reservation" action="../php/editItem.php" method="post" onsubmit="return validateForm()" name="Form">
+            <form class="reservation" action="../php/addItem.php" method="post" onsubmit="return validateForm()" name="Form">
               <div class="reservation-form-top">
-              <label>Edit an item</label><br />
+              <label>Add new item</label><br />
                 <label>Name</label><br />
                 <input type="text" name="Name" />
               </div>
@@ -76,10 +76,6 @@ include_once('../includes/session.php');
                   <label>Price</label><br />
                   <input type="number" name="Price" />
                 </div>
-              </div>
-              <div class="reservation-form-bottom">
-                <label>ID</label><br />
-                <input type="number" name="ID"/>
               </div>
               <div class="reservation-form-end">
                 <button type="submit" class="reservation-form-btn btn">Submit</button>
