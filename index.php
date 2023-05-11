@@ -42,6 +42,7 @@
               The Polish<br />
               Dream
             </p>
+
           </div>
           <a href="#menu"
             ><button class="order-now-btn btn">Order now</button></a
@@ -110,7 +111,7 @@ foreach ($conn->query($sql) as $row) {
   echo('<div class="menu-item">');
   echo("<h2>" . $row['Name']. "&nbsp;&nbsp;&nbsp;" .$row['Price']. "$". "</h2>");
   echo('<p class="menu-item-desc">' . $row['Description']. "</p>");
-  echo('<button class="add-to-cart-btn btn">Add to cart</button>');
+  echo('<add-cart></add-cart>');
   echo("</div>");
 }
 
@@ -223,6 +224,7 @@ foreach ($conn->query($sql) as $row) {
         <div class="footer-line"></div>
       </div>
     </footer>
+    <script src="./js/addCart.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
