@@ -34,7 +34,6 @@ function reset() {
 }
 
 // validate form logic
-
 function validateForm() {
   var formInputs = document.forms["Form"].getElementsByTagName("input");
   for (var i = 0; i < formInputs.length; i++) {
@@ -45,6 +44,7 @@ function validateForm() {
   }
   return true;
 }
+
 // reservation logic
 document
   .getElementById("reservationForm")
@@ -54,8 +54,8 @@ document
     const lastName = this.LastName.value.trim();
     const phoneNumber = this.Number.value.trim();
 
-    // phone number validation
-    const phonePattern = /^(06\d{8}|\+\d{1,3}\d{9,12})$/;
+    // Updated phone number validation pattern
+    const phonePattern = /^\+?[1-9]\d{1,14}$/;
 
     if (!date || !firstName || !lastName || !phoneNumber) {
       event.preventDefault();
@@ -63,7 +63,7 @@ document
     } else if (!phonePattern.test(phoneNumber)) {
       event.preventDefault();
       alert(
-        "Please enter a valid phone number. It should start with '06' or a country code (e.g., '+31')."
+        "Please enter a valid phone number. It can include country codes (e.g., '+123') and must be between 7 and 15 digits."
       );
     } else {
       alert("Thank you for your reservation!");

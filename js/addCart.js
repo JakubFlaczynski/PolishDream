@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", function () {
       const productId = this.getAttribute("data-id");
 
-      // Send request to the server to add item to the cart
       fetch("./php/add_to_cart.php", {
         method: "POST",
         headers: {
@@ -13,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         body: `product_id=${productId}`,
       })
-        .then((response) => response.text()) // Using .text() temporarily to inspect the response
+        .then((response) => response.text())
         .then((data) => {
-          console.log(data); // Output raw response for debugging
+          console.log(data);
           try {
-            const jsonData = JSON.parse(data); // Attempt to parse JSON response
+            const jsonData = JSON.parse(data);
             if (jsonData.status === "success") {
               alert("Product added to cart");
             } else {

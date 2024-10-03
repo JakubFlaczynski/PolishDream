@@ -12,6 +12,7 @@ body {
 }
 input {
   font-size: 25px;
+  padding-left: 10px;
 }
 nav {
   display: flex;
@@ -213,6 +214,7 @@ nav {
   font-size: 100px;
   color: #eae0cc;
   box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  height: 150px;
 }
 .reserve-heading {
   text-align: center;
@@ -417,7 +419,7 @@ nav {
 }
 .reservation-form-btn {
   background: #19272b;
-  box-shadow: 75px 21px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 7px 2px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
   font-family: "Cookie", cursive;
   color: #eae0cc;
